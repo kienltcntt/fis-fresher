@@ -9,7 +9,7 @@
 * Data Model + DAO in Mem
 * [OOP](https://topdev.vn/blog/lap-trinh-huong-doi-tuong-oops-trong-java/)
 * [Array & ArrayList](https://viettuts.vn/java-collection/su-khac-nhau-giua-array-voi-arraylist)
-* 
+* [StringBuilder vs StringBuffer](https://viblo.asia/p/string-stringbuffer-va-stringbuilder-trong-java-vyDZOQg75wj)
 ## Sprint 2
 ## Sprint 3
 ## Sprint 4
