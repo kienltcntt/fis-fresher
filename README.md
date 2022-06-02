@@ -10,6 +10,8 @@
 * [OOP](https://topdev.vn/blog/lap-trinh-huong-doi-tuong-oops-trong-java/)
 * [Array & ArrayList](https://viettuts.vn/java-collection/su-khac-nhau-giua-array-voi-arraylist)
 * [StringBuilder vs StringBuffer](https://viblo.asia/p/string-stringbuffer-va-stringbuilder-trong-java-vyDZOQg75wj)
+* [Lambda Expression](https://viblo.asia/p/nam-ro-java-lambda-expression-cho-nguoi-moi-bat-dau-RQqKLNwbl7z)
+* [Collections](https://dev.to/educative/what-are-java-collections-get-started-with-the-framework-1j8j)
 ## Sprint 2
 ## Sprint 3
 ## Sprint 4
