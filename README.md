@@ -13,6 +13,7 @@
 * [Lambda Expression](https://viblo.asia/p/nam-ro-java-lambda-expression-cho-nguoi-moi-bat-dau-RQqKLNwbl7z)
 * [Collections](https://dev.to/educative/what-are-java-collections-get-started-with-the-framework-1j8j)
 ## Sprint 2
+* JDBC - ODBC
 ## Sprint 3
 ## Sprint 4
 
