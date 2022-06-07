@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fresher-jdbc-mysql-demo" />
+        <module name="JDBC MySQL" />
       </profile>
     </annotationProcessing>
   </component>
