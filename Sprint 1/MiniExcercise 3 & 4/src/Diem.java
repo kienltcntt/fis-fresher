@@ -9,6 +9,22 @@ public class Diem implements Comparable<Diem>, Serializable {
         this.diem = diem;
     }
 
+    public long getMon() {
+        return Long.parseLong(mon.toString());
+    }
+
+    public void setMon(MonHoc mon) {
+        this.mon = mon;
+    }
+
+    public int getDiem() {
+        return diem;
+    }
+
+    public void setDiem(int diem) {
+        this.diem = diem;
+    }
+
     public boolean equals(Object that) {
         // Hai diem duoc goi la bang nhau neu cua cung mot mon
         if (that instanceof Diem) {

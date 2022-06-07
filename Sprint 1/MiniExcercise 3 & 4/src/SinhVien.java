@@ -2,8 +2,8 @@
 import java.util.*;
 
 public class SinhVien {
-    private String mssv;
-    private String ten;
+    public String mssv;
+    public String ten;
 
     private Set<Diem> monDaHoc = new HashSet<Diem>();
 
@@ -18,15 +18,29 @@ public class SinhVien {
 
     //TODO Cau 1
     public double tinhDiemTrungBinh() {
-        Set<Diem> monDaHoc = new HashSet<Diem>();
-        double diemTrungBinh;
-
-        return 0.0;
+        //Tinh tong diem
+        double diemTong = monDaHoc.stream().mapToDouble(Diem::getDiem).sum();
+        //Count mon da hoc
+        long count = monDaHoc.stream().mapToLong(Diem::getMon).count();
+        return (double) diemTong/count;
     }
 
 
     //TODO Cau 2
     public String bangDiem() {
+        StringBuilder string = new StringBuilder();
+        string.append("MSSV : " + mssv);
+        string.append("Ten : " + ten);
+        System.out.println(string.append("Danh sach diem"));
+        System.out.println("STT" + "\t" + " Ten Mon" + "\t" + " Diem" + "\t" + " So tin chi");
+        ArrayList<MonHoc> arr = new ArrayList<>();
+        for (MonHoc s : arr) {
+            string.append(monDaHoc.stream().mapToLong(Diem::getMon).count())
+                    .append(s.getTen())
+                    .append(monDaHoc.stream().mapToDouble(Diem::getDiem))
+                    .append(s.getTcTH());
+        }
+        string.append("Diem trung binh : " + tinhDiemTrungBinh());
     /*
      MSSV : 0203044
      Ten  : Nguyen Van A
@@ -35,10 +49,7 @@ public class SinhVien {
      1    Cau Truc Du Lieu 1  8          3
      2    Cau Truc Du Lieu 2  8          3
      Diem Trung Binh   8.0
-    */
-        //...
-        //StringBuilder
-        return null;
+    *
     }
 
 
