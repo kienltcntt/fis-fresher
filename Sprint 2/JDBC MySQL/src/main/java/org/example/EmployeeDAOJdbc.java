@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeDAOJdbc implements IEmployeeDAO{
+public class EmployeeDAOJdbc implements IEmployeeDAO {
     public final static String URL = "jdbc:mysql://localhost:3306/jdbc_demo";
     public final static String USER_NAME = "root";
     public final static String PASSWORD = "root";
@@ -22,9 +22,9 @@ public class EmployeeDAOJdbc implements IEmployeeDAO{
 
         List<Employee> employees = new ArrayList<>();
         try (Connection con =
-                     DriverManager.getConnection (URL, USER_NAME, PASSWORD);
-             Statement stmt = con.createStatement ();
-             ResultSet rs = stmt.executeQuery (query)) {
+                     DriverManager.getConnection(URL, USER_NAME, PASSWORD);
+             Statement stmt = con.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
 
             while (rs.next()) {
                 long empID = rs.getLong("ID");
@@ -73,6 +73,7 @@ public class EmployeeDAOJdbc implements IEmployeeDAO{
         // end of try-with-resources
         return false;
     }
+}
 
 //    @Override
 //    public boolean addAll(@Nullable List<Employee> employeeList) {

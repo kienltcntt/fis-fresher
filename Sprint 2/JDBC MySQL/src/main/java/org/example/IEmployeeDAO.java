@@ -9,5 +9,4 @@ public interface IEmployeeDAO {
 
     public boolean add(Employee employee);
 
-    boolean addAll(@Nullable List<Employee> employeeList);
 }
