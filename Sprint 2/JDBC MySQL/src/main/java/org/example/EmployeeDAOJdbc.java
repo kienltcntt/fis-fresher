@@ -1,14 +1,11 @@
 package org.example;
 
-import com.mysql.cj.protocol.a.LocalDateTimeValueEncoder;
 import org.example.util.DateUtil;
+import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,4 +73,39 @@ public class EmployeeDAOJdbc implements IEmployeeDAO{
         // end of try-with-resources
         return false;
     }
-}
+
+//    @Override
+//    public boolean addAll(@Nullable List<Employee> employeeList) {
+//        Connection con = null;
+//        try {
+//            con = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
+//            con.setAutoCommit(false);
+//
+//            PreparedStatement stmt = con.prepareStatement("INSERT INTO Employee VALUES (?,?,?,?)");
+//
+//            for(Employee e : employeeList) {
+//                stmt.setLong(1, e.getId());
+//                stmt.setString(2, e.setName());
+//                stmt.setDouble(3, e.getSalary());
+//                stmt.setString(4, DateUtil.getString(e.getCreateDate()));
+//
+//                stmt.executeUpdate();
+//            }
+//            con.commit();
+//        } catch (SQLException e) {
+//            logger.error(e.toString());
+//            try {
+//                con.rollback();
+//                return false;
+//            } catch (SQLException ex) {
+//                logger.error(ex.toString());
+//            }
+//        } finally {
+//            try {
+//                con.close();
+//            } catch (SQLException ex) {
+//                logger.error(ex.toString());
+//            }
+//        }
+//    }
+//}
