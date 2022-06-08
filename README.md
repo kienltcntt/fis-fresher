@@ -13,7 +13,9 @@
 * [Lambda Expression](https://viblo.asia/p/nam-ro-java-lambda-expression-cho-nguoi-moi-bat-dau-RQqKLNwbl7z)
 * [Collections](https://dev.to/educative/what-are-java-collections-get-started-with-the-framework-1j8j)
 ## Sprint 2
-* JDBC - ODBC
+* [JDBC - ODBC](https://cloudgeeks.net/jdbc-va-odbc/)
+* [MySQL](https://www.mysql.com/)
+* [Logger](https://gpcoder.com/5500-gioi-thieu-java-logging/)
 ## Sprint 3
 ## Sprint 4
 
